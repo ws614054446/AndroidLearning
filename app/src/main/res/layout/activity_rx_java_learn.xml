@@ -14,4 +14,9 @@
         android:layout_height="wrap_content"
         android:text="RxJava入门使用"/>
 
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_learn_rxjava_api"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RxJava API操作"/>
 </LinearLayout>

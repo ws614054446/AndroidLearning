@@ -12,28 +12,28 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class RxJavaLearnActivity extends AppCompatActivity {
+public class RxJavaLearnAPIActivity extends AppCompatActivity {
 
-    @BindView(R.id.btn_learn_rxjava_begin)
-    AppCompatButton btnLearnRxjavaBegin;
-    @BindView(R.id.btn_learn_rxjava_api)
-    AppCompatButton btnLearnRxjavaApi;
+    @BindView(R.id.btn_create_operation)
+    AppCompatButton btnCreateOperation;
+    @BindView(R.id.btn_transform)
+    AppCompatButton btnTransform;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rx_java_learn);
+        setContentView(R.layout.activity_rx_java_learn_api);
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.btn_learn_rxjava_begin, R.id.btn_learn_rxjava_api})
+    @OnClick({R.id.btn_create_operation, R.id.btn_transform})
     public void onViewClicked(View view) {
         switch (view.getId()) {
-            case R.id.btn_learn_rxjava_begin:
-                startActivity(new Intent(RxJavaLearnActivity.this, RxJavaLearnBeginActivity.class));
+            case R.id.btn_create_operation://创建操作
+                startActivity(new Intent(RxJavaLearnAPIActivity.this,CreateOperationActivity.class));
                 break;
-            case R.id.btn_learn_rxjava_api:
-                startActivity(new Intent(RxJavaLearnActivity.this,RxJavaLearnAPIActivity.class));
+            case R.id.btn_transform://变换操作
+                startActivity(new Intent(RxJavaLearnAPIActivity.this,TransFormActivity.class));
                 break;
         }
     }

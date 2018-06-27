@@ -18,6 +18,14 @@
         </activity>
         <activity android:name=".rxjava.RxJavaLearnActivity">
         </activity>
+        <activity android:name=".rxjava.RxJavaLearnBeginActivity">
+        </activity>
+        <activity android:name=".rxjava.RxJavaLearnAPIActivity">
+        </activity>
+        <activity android:name=".rxjava.CreateOperationActivity">
+        </activity>
+        <activity android:name=".rxjava.TransFormActivity">
+        </activity>
     </application>
 
 </manifest>
