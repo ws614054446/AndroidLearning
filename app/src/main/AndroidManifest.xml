@@ -26,6 +26,10 @@
         </activity>
         <activity android:name=".rxjava.TransFormActivity">
         </activity>
+        <activity android:name=".rxjava.FilterOperationActivity">
+        </activity>
+        <activity android:name=".rxjava.CombineActivity">
+        </activity>
     </application>
 
 </manifest>

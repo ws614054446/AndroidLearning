@@ -26,7 +26,7 @@ public class RxJavaLearnAPIActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.btn_create_operation, R.id.btn_transform})
+    @OnClick({R.id.btn_create_operation, R.id.btn_transform,R.id.btn_filter,R.id.btn_combine})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btn_create_operation://创建操作
@@ -34,6 +34,12 @@ public class RxJavaLearnAPIActivity extends AppCompatActivity {
                 break;
             case R.id.btn_transform://变换操作
                 startActivity(new Intent(RxJavaLearnAPIActivity.this,TransFormActivity.class));
+                break;
+            case R.id.btn_filter://过滤操作
+                startActivity(new Intent(RxJavaLearnAPIActivity.this,FilterOperationActivity.class));
+                break;
+            case R.id.btn_combine://组合(合并)操作符
+                startActivity(new Intent(RxJavaLearnAPIActivity.this,CombineActivity.class));
                 break;
         }
     }
